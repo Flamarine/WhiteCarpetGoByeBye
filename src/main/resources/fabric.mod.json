@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "wcgbb",
+  "version": "${version}",
+
+  "name": "White Carpet Go Bye Bye",
+  "description": "Fix the annoying visual glitch on rendering generic item blocks when you have Fabric API installed.",
+  "authors": [
+    "pkstDev"
+  ],
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "top.skadi.pkst.wcgbb.WhiteCarpetGoByeBye"
+    ]
+  },
+  "mixins": [
+    "wcgbb.mixins.json"
+  ],
+  "accessWidener" : "wcgbb.accesswidener",
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "=1.19-22.w.13.oneBlockAtATime",
+    "java": ">=17"
+  }
+}
